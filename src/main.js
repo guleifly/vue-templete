@@ -3,8 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
+import platform from './utils/platform'
+import "./assets/css/common.css"
 
-Vue.use(ant);
+import axios from './utils/axios'
 
 Vue.config.productionTip = false
 
@@ -12,4 +14,4 @@ new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');
